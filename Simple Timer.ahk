@@ -284,7 +284,7 @@ OnPomodoro50Click(*) {
     }
 }
 
-; Round option event handlers - FIXED: Removed all rounds1Checkbox references
+; Round option event handlers
 OnRounds2Click(*) {
     if (this.rounds2Checkbox.Value) {
         this.rounds3Checkbox.Value := 0
@@ -333,7 +333,7 @@ StartPomodoro(*) {
         return
     }
     
-    ; Determine selected rounds - FIXED: Removed rounds1Checkbox reference
+    ; Determine selected rounds
     if (this.rounds2Checkbox.Value) {
         this.pomodoroRounds := 2
     } else if (this.rounds3Checkbox.Value) {
