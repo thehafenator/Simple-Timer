@@ -252,7 +252,7 @@ CreatePomodoroGUI() {
     this.pomodoroGui.Add("Button", "x150 yp-35 w120", "Custom").OnEvent("Click", ObjBindMethod(this, "SetCustomPomodoro"))
     
     ; Start button - positioned below Custom button with y+5 spacing
-    this.pomodoroGui.Add("Button", "x150 y+5 w120", "Start Pomodoro").OnEvent("Click", ObjBindMethod(this, "StartPomodoro"))
+    this.pomodoroGui.Add("Button", "x150 y+5 w120 Default", "Start Pomodoro").OnEvent("Click", ObjBindMethod(this, "StartPomodoro"))
     
     ; Force exact same size as main GUI
     this.pomodoroGui.Move(,, 306, 282)
